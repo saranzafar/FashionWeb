@@ -1,0 +1,566 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+}
+
+@font-face {
+    font-family: 'Skyscapers';
+    src: url('//2ttf.com/webfont/6IF8GLA3aiM/webfont.ttf') format('truetype');
+}
+
+:root {
+    --back-color: black;
+    --danger-color: red;
+    --maxw: 733px;
+}
+
+.container {
+    height: auto;
+    width: auto;
+    background-color: black;
+    padding: 0px 0px;
+    margin: auto;
+}
+
+/* Designing navigation */
+
+
+
+/* Designing Box  */
+.box {
+    position: relative;
+    height: auto;
+    width: 100%;
+    background-color: var(--back-color);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    margin: auto;
+}
+
+.sub-box {
+    position: relative;
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    color: white;
+}
+
+.sub-box h1 {
+    font-size: 4rem;
+    width: 75%;
+    text-align: center;
+    padding: 0% 0px 10px 0px;
+    text-shadow: 2px 2px black;
+    margin: 10px 10%;
+    font-weight: 1;
+    position: absolute;
+    z-index: 5;
+    top: -30rem;
+}
+
+.sub-box p {
+    position: absolute;
+    z-index: 5;
+    width: 60%;
+    margin: 10px 19%;
+    top: -11rem;
+    font-size: 14px;
+    text-align: center;
+    font-family: system-ui;
+}
+
+/* @media only screen and (min-Width:1050px) and (max-Width:640px) { */
+@media only screen and (min-Width:350px) and (max-Width:640px) {
+    .sub-box h1 {
+        top: -13rem;
+        width: 80%;
+        font-size: 3.5rem;
+    }
+
+    .sub-box p {
+        top: 1rem;
+        font-size: 14px;
+        text-align: center;
+        font-family: system-ui;
+    }
+
+    .sub-box button {
+        margin-top: 10rem !important;
+    }
+
+    .sub-box {
+        height: 40vh;
+    }
+
+    .box img {
+        background-color: tomato;
+        width: 80% !important;
+        margin: 20px auto 0px auto;
+        opacity: 1;
+    }
+
+}
+
+@media only screen and (max-Width:350px) {
+    .sub-box h1 {
+        top: -9rem;
+        width: 100%;
+        font-size: 2.5rem;
+        margin: auto;
+    }
+
+    .sub-box p {
+        top: 1rem;
+        font-size: 14px;
+        text-align: center;
+        width: 90%;
+        margin: auto;
+        font-family: system-ui;
+    }
+
+    .sub-box button {
+        margin-top: 10rem !important;
+    }
+
+    .sub-box {
+        height: 40vh;
+    }
+
+    .box img {
+        background-color: tomato;
+        width: 80% !important;
+        margin: 20px auto 0px auto;
+        opacity: 1;
+    }
+
+}
+
+.sub-box button {
+    border-radius: 50px 10px 50px 10px;
+    font-size: 1rem;
+    padding: 7px;
+    outline: none;
+    border: 2px solid white;
+    width: 98px;
+    background-color: white;
+    display: block;
+    color: black;
+    margin: 35px auto;
+    cursor: pointer;
+    transition: all .2s;
+    position: none;
+}
+
+.sub-box button:hover {
+    font-weight: bold;
+}
+
+.sub-box button:active {
+    border: 2px solid gray;
+    background-color: gray;
+}
+
+.box img {
+    background-color: tomato;
+    width: 70%;
+    transform: rotate(0deg);
+    margin: 20px auto 0px auto;
+    opacity: .8;
+    transition: .3s;
+}
+
+.box img:hover {
+    opacity: .9;
+}
+
+/* Designing #box2/box-2nd */
+.box-2nd {
+    background-color: #f3f3f3;
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.headings {
+    display: none;
+}
+
+.first-column {
+    height: auto;
+    width: 90%;
+    text-align: center;
+}
+
+.first-column img {
+    width: 70%;
+    transform: rotate(0deg);
+    margin: 30px auto 40px auto;
+}
+
+.first-column p {
+    text-align: justify;
+    padding: 10px 10px;
+    width: 70%;
+    margin: auto;
+}
+
+
+.second-column {
+    text-align: center;
+    width: 70%;
+    height: auto;
+    margin: auto;
+}
+
+.second-column button {
+    border-radius: 50px 10px 50px 10px;
+    font-size: 1rem;
+    padding: 10px;
+    outline: none;
+    border: 2px solid black;
+    width: 95px;
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.second-column button:hover {
+    font-weight: bold;
+}
+
+.second-column button:active {
+    border: 2px solid rgb(39, 38, 38);
+    background-color: rgb(51, 51, 51);
+}
+
+.third-column {
+    height: auto;
+    width: 80%;
+    text-align: center;
+}
+
+.third-column p {
+    text-align: justify;
+    padding: 10px 10px;
+    margin: 25px auto 10px auto;
+    width: 80%;
+}
+
+.third-column img {
+    width: 80%;
+    transform: rotate(0deg);
+    margin: 30px auto 10px auto;
+}
+
+
+
+/* Designing Box-3rd  */
+.box-3rd {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    background-color: black;
+    color: white;
+    margin-top: 40px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sub-box1 {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
+
+.sub-box1 h1 {
+    font-size: 40px;
+    font-weight: 1;
+    margin: 10px;
+}
+
+.sub-box1 div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-weight: 1;
+    flex-direction: column;
+    width: 100%;
+    align-items: baseline;
+    margin: auto;
+}
+
+.sub-box1 div h2 {
+    border-bottom: 2px solid white;
+    font-weight: 1;
+    font-size: 2rem;
+    padding-top: 10px;
+    margin: auto;
+}
+
+.sub-box1 div p {
+    font-size: 25px;
+    border-bottom: 2px solid white;
+    padding-top: 10px;
+    margin: 10px auto;
+    padding: 0;
+}
+
+.sub-box1>p {
+    margin: 15px auto 30px auto;
+    width: 80%;
+}
+
+
+.sub-box2 {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
+
+.sub-box2 div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-weight: 1;
+    flex-direction: column;
+    width: 100%;
+    align-items: baseline;
+    margin: auto;
+}
+
+.sub-box2 div h2 {
+    border-bottom: 2px solid white;
+    font-weight: 1;
+    font-size: 2rem;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.sub-box2 div p {
+    font-size: 25px;
+    border-bottom: 2px solid white;
+    padding-top: 10px;
+    margin: 10px auto;
+    padding: 0;
+}
+
+.sub-box2>p {
+    margin: 15px auto;
+    width: 80%;
+}
+
+.sub-box3 {
+    width: 100%;
+    text-align: center;
+}
+
+.sub-box3 button {
+    border-radius: 50px 10px 50px 10px;
+    font-size: 1rem;
+    padding: 10px;
+    outline: none;
+    border: 2px solid white;
+    width: 99px;
+    background-color: white;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.sub-box3 button:hover {
+    font-weight: bold;
+}
+
+.sub-box3 button:active {
+    border: 2px solid rgb(39, 38, 38);
+    background-color: rgb(51, 51, 51);
+}
+
+
+/* Designing .box-4th */
+.box-4th {
+    text-align: center;
+    margin-top: 6rem;
+}
+
+.box-4th h1 {
+    font-size: 2.5rem;
+    margin: auto;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    background-color: black;
+    color: white;
+    font-weight: 1;
+}
+
+.sub-box4 {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sub-box4 img {
+    width: 82.5%;
+    opacity: .8;
+    transition: .5s;
+    align-items: center;
+    margin: auto;
+}
+
+.sub-box4 img:hover {
+    opacity: 1;
+}
+
+.text4 {
+    padding: 10px;
+    height: auto;
+    width: 80%;
+    margin: auto;
+    background-color: #f3f3f3;
+}
+
+.text4 h2 {
+    font-size: 2rem;
+    font-weight: 1;
+    margin: 10px 0px;
+}
+
+.text4 p {
+    margin-top: 50px;
+    padding: 2% 3%;
+}
+
+.text4 button {
+    border-radius: 50px 10px 50px 10px;
+    font-size: 1rem;
+    padding: 10px;
+    outline: none;
+    border: 2px solid black;
+    width: 110px;
+    background-color: black;
+    color: white;
+    margin-top: 15%;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.text4 button:hover {
+    font-weight: bold;
+}
+
+.text4 button:active {
+    border: 2px solid rgb(71, 71, 71);
+    background-color: rgb(71, 71, 71);
+}
+
+
+/* Designing footer  */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.container1 {
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    margin-top: 20px;
+    padding: 30px 0px 0px 0px;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #f3f3f3;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+.copyright {
+    color: #bbbbbb;
+    text-align: center;
+    padding: 20px;
+}
